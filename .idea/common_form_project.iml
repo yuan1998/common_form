@@ -6,11 +6,15 @@
       <sourceFolder url="file://$MODULE_DIR$/../common_form_project/app" isTestSource="false" packagePrefix="App\" />
       <excludeFolder url="file://$MODULE_DIR$/../common_form_project/vendor/composer" />
       <excludeFolder url="file://$MODULE_DIR$/../common_form_project/vendor/dnoegel/php-xdg-base-dir" />
+      <excludeFolder url="file://$MODULE_DIR$/../common_form_project/vendor/doctrine/cache" />
+      <excludeFolder url="file://$MODULE_DIR$/../common_form_project/vendor/doctrine/dbal" />
+      <excludeFolder url="file://$MODULE_DIR$/../common_form_project/vendor/doctrine/event-manager" />
       <excludeFolder url="file://$MODULE_DIR$/../common_form_project/vendor/doctrine/inflector" />
       <excludeFolder url="file://$MODULE_DIR$/../common_form_project/vendor/doctrine/instantiator" />
       <excludeFolder url="file://$MODULE_DIR$/../common_form_project/vendor/doctrine/lexer" />
       <excludeFolder url="file://$MODULE_DIR$/../common_form_project/vendor/dragonmantank/cron-expression" />
       <excludeFolder url="file://$MODULE_DIR$/../common_form_project/vendor/egulias/email-validator" />
+      <excludeFolder url="file://$MODULE_DIR$/../common_form_project/vendor/encore/laravel-admin" />
       <excludeFolder url="file://$MODULE_DIR$/../common_form_project/vendor/facade/flare-client-php" />
       <excludeFolder url="file://$MODULE_DIR$/../common_form_project/vendor/facade/ignition" />
       <excludeFolder url="file://$MODULE_DIR$/../common_form_project/vendor/facade/ignition-contracts" />
@@ -67,6 +71,7 @@
       <excludeFolder url="file://$MODULE_DIR$/../common_form_project/vendor/symfony/console" />
       <excludeFolder url="file://$MODULE_DIR$/../common_form_project/vendor/symfony/css-selector" />
       <excludeFolder url="file://$MODULE_DIR$/../common_form_project/vendor/symfony/debug" />
+      <excludeFolder url="file://$MODULE_DIR$/../common_form_project/vendor/symfony/dom-crawler" />
       <excludeFolder url="file://$MODULE_DIR$/../common_form_project/vendor/symfony/error-handler" />
       <excludeFolder url="file://$MODULE_DIR$/../common_form_project/vendor/symfony/event-dispatcher" />
       <excludeFolder url="file://$MODULE_DIR$/../common_form_project/vendor/symfony/event-dispatcher-contracts" />
