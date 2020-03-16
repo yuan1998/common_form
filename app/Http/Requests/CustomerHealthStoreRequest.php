@@ -25,12 +25,11 @@ class CustomerHealthStoreRequest extends FormRequest
     {
         return [
             'name'             => 'required|string',
-//            'sex'              => 'required|inter',
+            'sex'              => 'required|integer',
             'phone'            => 'required|string',
             'id_card'          => 'required|string',
             'body_temperature' => 'required|string',
-//            'question_data'    => 'required|json',
-
+            'question_data'    => 'required|json',
         ];
     }
 }
