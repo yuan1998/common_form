@@ -4,6 +4,7 @@ namespace App\Admin\Controllers;
 
 use App\Models\CustomerHealth;
 use Encore\Admin\Controllers\AdminController;
+use Encore\Admin\Facades\Admin;
 use Encore\Admin\Form;
 use Encore\Admin\Grid;
 use Encore\Admin\Show;
@@ -26,7 +27,18 @@ class CustomerHealthController extends AdminController
     {
         $grid = new Grid(new CustomerHealth);
 
-        $grid->disableActions();
+
+        if (Admin::user()->isRole('administrator')) {
+            $grid->actions(function ($actions) {
+                // 去掉编辑
+                $actions->disableEdit();
+                // 去掉查看
+                $actions->disableView();
+            });
+
+        } else {
+            $grid->disableActions();
+        }
 
 
         $grid->column('id', __('编号'));

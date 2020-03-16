@@ -28,6 +28,9 @@
       <excludeFolder url="file://$MODULE_DIR$/../common_form_project/vendor/laravel/tinker" />
       <excludeFolder url="file://$MODULE_DIR$/../common_form_project/vendor/league/commonmark" />
       <excludeFolder url="file://$MODULE_DIR$/../common_form_project/vendor/league/flysystem" />
+      <excludeFolder url="file://$MODULE_DIR$/../common_form_project/vendor/maatwebsite/excel" />
+      <excludeFolder url="file://$MODULE_DIR$/../common_form_project/vendor/markbaker/complex" />
+      <excludeFolder url="file://$MODULE_DIR$/../common_form_project/vendor/markbaker/matrix" />
       <excludeFolder url="file://$MODULE_DIR$/../common_form_project/vendor/mockery/mockery" />
       <excludeFolder url="file://$MODULE_DIR$/../common_form_project/vendor/monolog/monolog" />
       <excludeFolder url="file://$MODULE_DIR$/../common_form_project/vendor/myclabs/deep-copy" />
@@ -41,6 +44,7 @@
       <excludeFolder url="file://$MODULE_DIR$/../common_form_project/vendor/phpdocumentor/reflection-common" />
       <excludeFolder url="file://$MODULE_DIR$/../common_form_project/vendor/phpdocumentor/reflection-docblock" />
       <excludeFolder url="file://$MODULE_DIR$/../common_form_project/vendor/phpdocumentor/type-resolver" />
+      <excludeFolder url="file://$MODULE_DIR$/../common_form_project/vendor/phpoffice/phpspreadsheet" />
       <excludeFolder url="file://$MODULE_DIR$/../common_form_project/vendor/phpoption/phpoption" />
       <excludeFolder url="file://$MODULE_DIR$/../common_form_project/vendor/phpspec/prophecy" />
       <excludeFolder url="file://$MODULE_DIR$/../common_form_project/vendor/phpunit/php-code-coverage" />

@@ -179,6 +179,10 @@
       <path value="$PROJECT_DIR$/../common_form_project/vendor/psy/psysh" />
       <path value="$PROJECT_DIR$/../common_form_project/vendor/mockery/mockery" />
       <path value="$PROJECT_DIR$/../common_form_project/vendor/egulias/email-validator" />
+      <path value="$PROJECT_DIR$/../common_form_project/vendor/maatwebsite/excel" />
+      <path value="$PROJECT_DIR$/../common_form_project/vendor/phpoffice/phpspreadsheet" />
+      <path value="$PROJECT_DIR$/../common_form_project/vendor/markbaker/matrix" />
+      <path value="$PROJECT_DIR$/../common_form_project/vendor/markbaker/complex" />
     </include_path>
   </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="7.2" />
