@@ -1,5 +1,6 @@
 <?php
 
+use App\Admin\Controllers\CustomerHealthController;
 use Illuminate\Routing\Router;
 
 Admin::routes();
@@ -12,4 +13,5 @@ Route::group([
 
     $router->get('/', 'HomeController@index')->name('admin.home');
 
+    $router->resource('customer-healths', "CustomerHealthController");
 });

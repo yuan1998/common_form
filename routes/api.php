@@ -13,6 +13,16 @@ use Illuminate\Http\Request;
 |
 */
 
+Route::prefix('customer-health')->group(function () {
+    Route::post('/', "CustomerHealthController@store");
+    Route::get('version', function() {
+        abort(403, 'test');
+        return 'this is version v1';
+    })->name('version');
+
+});
+
+
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
