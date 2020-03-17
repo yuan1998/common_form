@@ -2,6 +2,7 @@
 
 namespace App\Admin\Controllers;
 
+use App\Admin\Extensions\Exports\CustomerHealthExport;
 use App\Models\CustomerHealth;
 use Encore\Admin\Controllers\AdminController;
 use Encore\Admin\Facades\Admin;
@@ -26,6 +27,7 @@ class CustomerHealthController extends AdminController
     protected function grid()
     {
         $grid = new Grid(new CustomerHealth);
+        $grid->exporter(new CustomerHealthExport());
 
 
         if (Admin::user()->isRole('administrator')) {

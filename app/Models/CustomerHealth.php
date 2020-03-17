@@ -7,7 +7,14 @@ use Illuminate\Database\Eloquent\Model;
 class CustomerHealth extends Model
 {
 
-    protected $fillable =[
+    public static $sexDetailList = [
+        0 => '未知',
+        1 => '男',
+        2 => '女',
+
+    ];
+
+    protected $fillable = [
         "name",
         "phone",
         "sex",
@@ -16,7 +23,7 @@ class CustomerHealth extends Model
         "question_data",
     ];
 
-    protected $casts =[
+    protected $casts = [
         "question_data" => "json"
     ];
 

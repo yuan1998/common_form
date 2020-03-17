@@ -1,0 +1,158 @@
+@import "../common/base";
+@import "../common/public";
+
+
+body, html {
+    background-color: #efefef;
+    font-family: -apple-system-font, Helvetica Neue, Helvetica, sans-serif;
+}
+
+.container-rem {
+    max-width: 640px;
+    width: 100%;
+    margin: 0 auto;
+    background-color: #edeeef;
+}
+
+.headerContent {
+    padding: 20px 5% 70px 5%;
+    background-color: #3f99fd;
+
+
+    .title {
+        font-size: 18px;
+        color: #fff;
+        margin-bottom: 20px;
+        font-weight: bold;
+        line-height: 1.6;
+    }
+
+    .detailText {
+        font-size: 14px;
+        margin-top: 5px;
+        color: rgba(255, 255, 255, 0.60);
+        line-height: 1.6;
+
+        &.light {
+            color: rgba(255, 255, 255, 1)
+        }
+    }
+
+}
+
+.contentBox {
+    width: 90%;
+    padding: 3% 0% 3% 0%;
+    margin-left: 5%;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    margin-top: -50px;
+
+
+}
+
+
+.submitButton {
+    width: 90%;
+    margin: 38px auto 50px;
+    background-color: #4790f6;
+    color: #FFFFFF;
+    font-size: 18px;
+    font-weight: bold;
+    height: 46px;
+    line-height: 46px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.questionForm {
+    padding: 0 20px;
+
+    .questionItem {
+        padding: 15px 0;
+        border-bottom: 1px solid #f2f2f2;
+
+        &:last-child {
+            border-bottom: none;
+        }
+    }
+
+
+    .questionTitle {
+        color: #999;
+        font-size: 14px;
+        line-height: 1.5;
+        font-weight: bold;
+
+        &::after {
+            content: "*";
+            color: red;
+            font-weight: bold;
+        }
+
+    }
+
+    .questionOption {
+        font-size: .3rem;
+        color: #444;
+    }
+
+    .questionRadio {
+        margin-top: 8px;
+    }
+
+    .optionLabel {
+        font-size: 18px;
+        font-weight: bold;
+        color: #000;
+        margin-left: 20px;
+        vertical-align: baseline;
+
+        &:first-child {
+            margin-left: 0;
+        }
+
+
+        .radio-icon {
+            width: 20px;
+            height: 20px;
+            border-radius: 100%;
+            border: 1px solid #cfcfcf;
+            display: inline-block;
+            overflow: hidden;
+
+        }
+
+        input {
+            display: none;
+
+            &:checked ~ .radio-icon {
+                background-color: #4791f6;
+            }
+        }
+    }
+
+    .questionInput {
+        font-size: 18px;
+        font-weight: bold;
+        color: #000;
+
+        width: 100%;
+        border: 0;
+        outline: 0;
+        -webkit-appearance: none;
+        background-color: transparent;
+        height: 1.47058824em;
+        line-height: 1.47058824;
+
+        &::placeholder {
+            font-weight: normal;
+            font-size: 14px;
+            color: #b7b7b7;
+        }
+
+    }
+}
+

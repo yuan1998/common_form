@@ -21,5 +21,4 @@ class CustomerHealthController extends Controller
         ]);
     }
 
-
 }

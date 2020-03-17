@@ -1,0 +1,223 @@
+/**
+ * @Description: public.css
+ * @author Yuan !998🤓🤓
+ * @date 2018/7/26
+*/
+@col-count: 24;
+
+* {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    vertical-align: top;
+    position: relative;
+}
+
+svg {
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+}
+
+img {
+    border: 0;
+
+    &.mw-img {
+        display: block;
+        max-width: 100%;
+    }
+
+    &.mw-img-i {
+        display: inline-block;
+        max-width: 100%;
+    }
+
+    &.c-img {
+        display: block;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+    }
+
+    &.mc-img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        -o-object-fit: cover;
+        object-fit: cover;
+    }
+
+    &.mcn-img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+
+}
+
+.oh {
+    overflow: hidden;
+}
+
+.left {
+    text-align: left;
+}
+
+.right {
+    text-align: right;
+}
+
+.center {
+    text-align: center;
+}
+
+.full-width {
+    width: 100%;
+}
+
+.full-height {
+    height: 100%;
+}
+
+/* pf =>  position:fixed  */
+.pf {
+    position: fixed;
+    /*chrome 内核 浏览器 position: fixed 防止抖动*/
+    -webkit-transform: translateZ(0);
+}
+
+/*利用绝对定位宽高拉升原理，中心居中元素，原子类*/
+
+.middle {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+}
+
+/*利用相对定位于 CSS3 使元素垂直居中，原子类*/
+
+.v-middle {
+    position: relative;
+    top: 50%;
+    -webkit-transform: -webkit-translateY(-50%);
+    -moz-transform: -moz-translateY(-50%);
+    -o-transform: -o-translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.to {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.block {
+    display: block;
+}
+
+.dib {
+    display: inline-block;
+}
+
+.item-lh {
+    display: inline-block;
+    line-height: 1;
+    vertical-align: middle;
+}
+
+.img-container {
+    max-width: 100%;
+    min-width: 1200px;
+    margin: 0 auto;
+}
+
+.index-container {
+    width: 1200px;
+    margin: 0 auto;
+    display: block;
+}
+
+.m_container {
+    width: 100%;
+    min-width: 320px;
+    margin: 0 auto;
+    display: block;
+}
+
+.hidden {
+    opacity: 0;
+}
+
+.notWidth {
+    max-width: 0;
+}
+
+.oh-container {
+    .img-container;
+    .oh;
+}
+
+.img_nr {
+    background-repeat: no-repeat;
+}
+
+.img_center {
+    background-position: center;
+}
+
+.img_cover {
+    .img_nr;
+    .img_center;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+.img_contain {
+    .img_nr;
+    .img_center;
+    -webkit-background-size: contain;
+    background-size: contain;
+}
+
+.model-fixed-class {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 18;
+}
+
+.mask-container {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, .86);
+    z-index: 10;
+}
+
+.disabled {
+    opacity: .5;
+}
+
+.flex {
+    display: flex;
+
+    &.column {
+        flex-direction: column;
+    }
+
+    .flex-auto {
+        flex: auto;
+    }
+
+    .flex-none {
+        flex: none;
+    }
+}
