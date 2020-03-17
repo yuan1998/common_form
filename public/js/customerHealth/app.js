@@ -6,10 +6,10 @@
         data   : {
             hi          : 'Yo.',
             baseForm    : {
-                name            : '312',
-                phone           : '13112345678',
-                sex             : '1',
-                id_card         : '441702199806013818',
+                name            : '',
+                phone           : '',
+                sex             : '',
+                id_card         : '',
                 body_temperature: '',
             },
             questionList: [
