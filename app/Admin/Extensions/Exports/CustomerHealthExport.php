@@ -9,7 +9,7 @@ use Maatwebsite\Excel\Concerns\WithMapping;
 use Maatwebsite\Excel\Concerns\WithStrictNullComparison;
 
 
-class CustomerHealthExport extends ExcelExporter implements WithMapping,ShouldAutoSize,WithStrictNullComparison
+class CustomerHealthExport extends ExcelExporter implements WithMapping, ShouldAutoSize, WithStrictNullComparison
 {
 
     protected $fileName = '客户健康报告.xlsx';
@@ -24,6 +24,34 @@ class CustomerHealthExport extends ExcelExporter implements WithMapping,ShouldAu
     ];
 
 
+    public function mapQuestionsData($data)
+    {
+        $resultArray = [];
+
+        foreach ($data as $item) {
+            $text   = $item['value'] == "1" ? "是" : "否";
+            $string = <<<EOT
+            Q .{$item['question']} \n
+            A .$text\n
+EOT;
+
+            array_push($resultArray, $string);
+        }
+        return implode("\n", $resultArray);
+
+    }
+
+    public function makeQuestionString($value)
+    {
+        if (isJsonArray($value)) {
+            $jsonData = json_decode($value, true);
+            return $this->mapQuestionsData($jsonData);
+        } else {
+            return $value;
+        }
+    }
+
+
     public function map($form): array
     {
         $sex = data_get(CustomerHealth::$sexDetailList, $form->sex, '未知');
@@ -33,7 +61,7 @@ class CustomerHealthExport extends ExcelExporter implements WithMapping,ShouldAu
             $sex,
             $form->phone,
             $form->body_temperature . " ℃ ",
-            $form->question_data,
+            $this->makeQuestionString($form->question_data),
         ];
     }
 
