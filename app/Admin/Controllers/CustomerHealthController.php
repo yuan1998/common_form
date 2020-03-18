@@ -17,7 +17,7 @@ class CustomerHealthController extends AdminController
      *
      * @var string
      */
-    protected $title = 'App\Models\CustomerHealth';
+    protected $title = '客户健康调研报告';
 
     /**
      * Make a grid builder.
@@ -28,6 +28,8 @@ class CustomerHealthController extends AdminController
     {
         $grid = new Grid(new CustomerHealth);
         $grid->exporter(new CustomerHealthExport());
+        $grid->disableCreateButton();
+        $grid->model()->orderBy('created_at', 'DESC');
 
 
         if (Admin::user()->isRole('administrator')) {
@@ -47,10 +49,14 @@ class CustomerHealthController extends AdminController
         $grid->column('name', __('客户姓名'));
         $grid->column('phone', __('客户电话'));
         $grid->column('id_card', __('客户身份证'));
-        $grid->column('sex', __('性别'));
-        $grid->column('body_temperature', __('体温'));
+        $grid->column('sex', __('性别'))->display(function ($val) {
+            return data_get(CustomerHealth::$sexDetailList, $val, '未知');
+        });
+        $grid->column('body_temperature', __('体温'))->display(function ($val) {
+            return $val . " ℃";
+        });
         $grid->column('created_at', __('提交日期'));
-        $grid->column('question_data', __('其他问题'));
+        $grid->column('question_data', __('其他问题'))->cardModal();
 
         return $grid;
     }

@@ -18,4 +18,9 @@
  *
  */
 
+use App\Admin\Extensions\Displays\CardModal;
+use Encore\Admin\Grid\Column;
+
 Encore\Admin\Form::forget(['map', 'editor']);
+
+Column::extend('cardModal', CardModal::class);

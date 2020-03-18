@@ -4,6 +4,7 @@
     <content url="file://$MODULE_DIR$/../common_form_project">
       <sourceFolder url="file://$MODULE_DIR$/../common_form_project/tests" isTestSource="true" packagePrefix="Tests\" />
       <sourceFolder url="file://$MODULE_DIR$/../common_form_project/app" isTestSource="false" packagePrefix="App\" />
+      <excludeFolder url="file://$MODULE_DIR$/../common_form_project/vendor/caouecs/laravel-lang" />
       <excludeFolder url="file://$MODULE_DIR$/../common_form_project/vendor/composer" />
       <excludeFolder url="file://$MODULE_DIR$/../common_form_project/vendor/dnoegel/php-xdg-base-dir" />
       <excludeFolder url="file://$MODULE_DIR$/../common_form_project/vendor/doctrine/cache" />
@@ -38,6 +39,7 @@
       <excludeFolder url="file://$MODULE_DIR$/../common_form_project/vendor/nikic/php-parser" />
       <excludeFolder url="file://$MODULE_DIR$/../common_form_project/vendor/nunomaduro/collision" />
       <excludeFolder url="file://$MODULE_DIR$/../common_form_project/vendor/opis/closure" />
+      <excludeFolder url="file://$MODULE_DIR$/../common_form_project/vendor/overtrue/laravel-lang" />
       <excludeFolder url="file://$MODULE_DIR$/../common_form_project/vendor/paragonie/random_compat" />
       <excludeFolder url="file://$MODULE_DIR$/../common_form_project/vendor/phar-io/manifest" />
       <excludeFolder url="file://$MODULE_DIR$/../common_form_project/vendor/phar-io/version" />

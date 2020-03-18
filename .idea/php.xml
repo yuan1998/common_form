@@ -183,6 +183,8 @@
       <path value="$PROJECT_DIR$/../common_form_project/vendor/phpoffice/phpspreadsheet" />
       <path value="$PROJECT_DIR$/../common_form_project/vendor/markbaker/matrix" />
       <path value="$PROJECT_DIR$/../common_form_project/vendor/markbaker/complex" />
+      <path value="$PROJECT_DIR$/../common_form_project/vendor/caouecs/laravel-lang" />
+      <path value="$PROJECT_DIR$/../common_form_project/vendor/overtrue/laravel-lang" />
     </include_path>
   </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="7.2" />

@@ -13,21 +13,21 @@ class HomeController extends Controller
     public function index(Content $content)
     {
         return $content
-            ->title('Dashboard')
-            ->description('Description...')
-            ->row(Dashboard::title())
+            ->title('仪表盘')
+            ->description('数据预览')
             ->row(function (Row $row) {
 
                 $row->column(4, function (Column $column) {
-                    $column->append(Dashboard::environment());
-                });
+                    $data = [
+                        "name"  => '今天的客户健康调研',
+                        "count" => 150,
+                        "url"   => "/admin/customer-healths",
+                        "icon"  => "fa-copy",
+                    ];
 
-                $row->column(4, function (Column $column) {
-                    $column->append(Dashboard::extensions());
-                });
-
-                $row->column(4, function (Column $column) {
-                    $column->append(Dashboard::dependencies());
+                    $column->append(view('adminViews.card-box', [
+                        'data' => $data
+                    ]));
                 });
             });
     }
