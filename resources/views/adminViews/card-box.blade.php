@@ -1,7 +1,6 @@
 <div class="small-box bg-aqua">
     <div class="inner">
         <h3>{{$data['count']}}</h3>
-
         <p>{{$data['name']}}</p>
     </div>
     <div class="icon">

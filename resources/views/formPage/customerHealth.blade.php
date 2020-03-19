@@ -83,7 +83,7 @@
                         </div>
                         <div class="questionOption">
                             <input v-model="baseForm.body_temperature"
-                                   type="tel" class="questionInput" name="phone" placeholder="请输入现在的体温情况">
+                                   type="tel" class="questionInput" name="body_temperature" placeholder="请输入现在的体温情况">
                         </div>
 
                     </div>

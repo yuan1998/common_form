@@ -14,52 +14,10 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../common_form_project/app/Admin/Controllers/HomeController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="18" selection-start-line="18" selection-end-line="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../common_form_project/app/Admin/Controllers/CustomerHealthController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="547">
-              <caret line="34" column="53" lean-forward="true" selection-start-line="34" selection-start-column="53" selection-end-line="34" selection-end-column="53" />
-              <folding>
-                <element signature="e#41#95#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../common_form_project/app/Admin/Extensions/Exports/CustomerHealthExport.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="415">
-              <caret line="35" column="4" lean-forward="true" selection-start-line="35" selection-start-column="4" selection-end-line="35" selection-end-column="4" />
-              <folding>
-                <element signature="e#48#78#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../common_form_project/config/admin.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="307">
-              <caret line="150" column="5" lean-forward="true" selection-start-line="150" selection-start-column="5" selection-end-line="150" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/../common_form_project/config/filesystems.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="632">
-              <caret line="62" lean-forward="true" selection-start-line="62" selection-end-line="62" />
+            <state relative-caret-position="464">
+              <caret line="60" column="17" lean-forward="true" selection-start-line="60" selection-start-column="17" selection-end-line="60" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -91,8 +49,52 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../common_form_project/bootstrap/helpers.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="427">
-              <caret line="17" column="20" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="20" />
+            <state relative-caret-position="148">
+              <caret line="8" column="1" lean-forward="true" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../common_form_project/app/Admin/Controllers/CustomerHealthController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1054">
+              <caret line="34" column="53" lean-forward="true" selection-start-line="34" selection-start-column="53" selection-end-line="34" selection-end-column="53" />
+              <folding>
+                <element signature="e#41#95#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../common_form_project/app/Admin/Controllers/HomeController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="450">
+              <caret line="29" column="29" lean-forward="true" selection-start-line="29" selection-start-column="29" selection-end-line="29" selection-end-column="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../common_form_project/resources/views/formPage/customerHealth.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="100" column="49" lean-forward="true" selection-start-line="100" selection-start-column="49" selection-end-line="100" selection-end-column="49" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/../common_form_project/public/js/customerHealth/app.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="530">
+              <caret line="167" column="42" lean-forward="true" selection-start-line="167" selection-start-column="42" selection-end-line="167" selection-end-column="42" />
+              <folding>
+                <element signature="e#396#1220#0" />
+                <element signature="e#1283#2766#0" />
+                <element signature="e#2928#4485#0" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -100,8 +102,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../common_form_project/resources/views/adminViews/card-box.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="310">
-              <caret line="9" column="105" selection-start-line="9" selection-start-column="105" selection-end-line="9" selection-end-column="105" />
+            <state relative-caret-position="217">
+              <caret line="7" column="10" lean-forward="true" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
             </state>
           </provider>
         </entry>
@@ -113,6 +115,8 @@
       <find>1</find>
       <find>translat</find>
       <find>file</find>
+      <find>public</find>
+      <find>体温</find>
     </findStrings>
   </component>
   <component name="IdeDocumentHistory">
@@ -130,12 +134,7 @@
         <option value="$PROJECT_DIR$/../common_form_project/app/Models/CustomerHealth.php" />
         <option value="$PROJECT_DIR$/../common_form_project/routes/web.php" />
         <option value="$PROJECT_DIR$/../common_form_project/public/js/remFontSize.js" />
-        <option value="$PROJECT_DIR$/../common_form_project/public/css/customerHealth/app.less" />
-        <option value="$PROJECT_DIR$/../common_form_project/resources/views/formPage/customerHealth.blade.php" />
-        <option value="$PROJECT_DIR$/../common_form_project/public/js/customerHealth/app.js" />
         <option value="$PROJECT_DIR$/../common_form_project/config/app.php" />
-        <option value="$PROJECT_DIR$/../common_form_project/resources/views/adminViews/card-box.blade.php" />
-        <option value="$PROJECT_DIR$/../common_form_project/app/Admin/Controllers/HomeController.php" />
         <option value="$PROJECT_DIR$/../common_form_project/app/Admin/Extensions/Displayers/CardModal.php" />
         <option value="$PROJECT_DIR$/../common_form_project/app/Admin/Extensions/Displayer/CardModal.php" />
         <option value="$PROJECT_DIR$/../common_form_project/app/Admin/bootstrap.php" />
@@ -145,6 +144,11 @@
         <option value="$PROJECT_DIR$/../common_form_project/app/Admin/Extensions/Exports/CustomerHealthExport.php" />
         <option value="$PROJECT_DIR$/../common_form_project/config/admin.php" />
         <option value="$PROJECT_DIR$/../common_form_project/config/filesystems.php" />
+        <option value="$PROJECT_DIR$/../common_form_project/resources/views/adminViews/card-box.blade.php" />
+        <option value="$PROJECT_DIR$/../common_form_project/app/Admin/Controllers/HomeController.php" />
+        <option value="$PROJECT_DIR$/../common_form_project/public/css/customerHealth/app.less" />
+        <option value="$PROJECT_DIR$/../common_form_project/public/js/customerHealth/app.js" />
+        <option value="$PROJECT_DIR$/../common_form_project/resources/views/formPage/customerHealth.blade.php" />
       </list>
     </option>
   </component>
@@ -467,12 +471,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1584366565519</updated>
-      <workItem from="1584366566982" duration="28475000" />
+      <workItem from="1584366566982" duration="31234000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="28475000" />
+    <option name="totallyTimeSpent" value="31234000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="966" extended-state="6" />
@@ -636,24 +640,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../common_form_project/public/js/customerHealth/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="311">
-          <caret line="33" column="35" selection-start-line="33" selection-start-column="35" selection-end-line="33" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../common_form_project/public/css/customerHealth/app.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="407">
-          <caret line="65" column="23" selection-start-line="65" selection-start-column="23" selection-end-line="65" selection-end-column="23" />
-          <folding>
-            <element signature="e#970#2061#0" />
-            <element signature="e#1488#1634#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../common_form_project/app/Models/CustomerHealth.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="117">
@@ -668,27 +654,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../common_form_project/resources/views/adminViews/card-box.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="310">
-          <caret line="9" column="105" selection-start-line="9" selection-start-column="105" selection-end-line="9" selection-end-column="105" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../common_form_project/resources/views/formPage/customerHealth.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2591">
-          <caret line="88" column="26" selection-start-line="88" selection-start-column="26" selection-end-line="88" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../common_form_project/app/Admin/Controllers/HomeController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../common_form_project/vendor/encore/laravel-admin/src/Grid/Displayers/AbstractDisplayer.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="418">
@@ -700,23 +665,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="661">
           <caret line="39" column="59" selection-start-line="39" selection-start-column="52" selection-end-line="39" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../common_form_project/bootstrap/helpers.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="427">
-          <caret line="17" column="20" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../common_form_project/app/Admin/Controllers/CustomerHealthController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="547">
-          <caret line="34" column="53" lean-forward="true" selection-start-line="34" selection-start-column="53" selection-end-line="34" selection-end-column="53" />
-          <folding>
-            <element signature="e#41#95#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -747,27 +695,84 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/../common_form_project/config/admin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3119">
+          <caret line="157" column="24" selection-start-line="157" selection-start-column="24" selection-end-line="157" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/../common_form_project/app/Admin/Extensions/Exports/CustomerHealthExport.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="415">
-          <caret line="35" column="4" lean-forward="true" selection-start-line="35" selection-start-column="4" selection-end-line="35" selection-end-column="4" />
+        <state relative-caret-position="446">
+          <caret line="36" lean-forward="true" selection-start-line="36" selection-end-line="36" />
           <folding>
             <element signature="e#48#78#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../common_form_project/config/admin.php">
+    <entry file="file://$PROJECT_DIR$/../common_form_project/config/filesystems.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="307">
-          <caret line="150" column="5" lean-forward="true" selection-start-line="150" selection-start-column="5" selection-end-line="150" selection-end-column="5" />
+        <state relative-caret-position="464">
+          <caret line="60" column="17" lean-forward="true" selection-start-line="60" selection-start-column="17" selection-end-line="60" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../common_form_project/config/filesystems.php">
+    <entry file="file://$PROJECT_DIR$/../common_form_project/resources/views/adminViews/card-box.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="632">
-          <caret line="62" lean-forward="true" selection-start-line="62" selection-end-line="62" />
+        <state relative-caret-position="217">
+          <caret line="7" column="10" lean-forward="true" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../common_form_project/bootstrap/helpers.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="148">
+          <caret line="8" column="1" lean-forward="true" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../common_form_project/app/Admin/Controllers/CustomerHealthController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1054">
+          <caret line="34" column="53" lean-forward="true" selection-start-line="34" selection-start-column="53" selection-end-line="34" selection-end-column="53" />
+          <folding>
+            <element signature="e#41#95#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../common_form_project/app/Admin/Controllers/HomeController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="29" column="29" lean-forward="true" selection-start-line="29" selection-start-column="29" selection-end-line="29" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../common_form_project/public/css/customerHealth/app.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="159" column="17" lean-forward="true" selection-start-line="159" selection-start-column="17" selection-end-line="159" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../common_form_project/resources/views/formPage/customerHealth.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="100" column="49" lean-forward="true" selection-start-line="100" selection-start-column="49" selection-end-line="100" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../common_form_project/public/js/customerHealth/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="530">
+          <caret line="167" column="42" lean-forward="true" selection-start-line="167" selection-start-column="42" selection-end-line="167" selection-end-column="42" />
+          <folding>
+            <element signature="e#396#1220#0" />
+            <element signature="e#1283#2766#0" />
+            <element signature="e#2928#4485#0" />
+          </folding>
         </state>
       </provider>
     </entry>

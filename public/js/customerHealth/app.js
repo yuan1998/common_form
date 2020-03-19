@@ -5,6 +5,8 @@
         el     : '#app',
         data   : {
             hi          : 'Yo.',
+            submiting   : false,
+            submited    : false,
             baseForm    : {
                 name            : '',
                 phone           : '',
@@ -120,16 +122,57 @@
             async handleSubmit() {
                 let data = this.formValidate();
 
-                if (data) {
-                    axios.post('/api/customer-health/', data).then((response, b, c) => {
-                        if (response.status === 200) {
-                            Swal.fire(
-                                '提交成功!',
-                                '我们会尽快核实你的信息!',
-                                'success'
-                            );
-                        }
-                    });
+
+                if (data && !this.submiting) {
+
+                    let test = this.submited ? await Swal.fire({
+                        title             : '提示',
+                        text              : "你已提交检查数据,是否重新提交?",
+                        icon              : 'warning',
+                        showCancelButton  : true,
+                        confirmButtonColor: '#3085d6',
+                        cancelButtonColor : '#d33',
+                        confirmButtonText : '确定提交',
+                        cancelButtonText  : '点错了',
+                    }) : { value: true };
+
+                    console.log('test :', test);
+
+                    if (test && test.value) {
+                        this.submiting = true;
+                        swal.fire({
+                            title            : '',
+                            html             : `
+                            <div class="save_loading">
+                                <svg viewBox="0 0 140 140" width="140" height="140"><g class="outline"><path d="m 70 28 a 1 1 0 0 0 0 84 a 1 1 0 0 0 0 -84" stroke="rgba(0,0,0,0.1)" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"></path></g><g class="circle"><path d="m 70 28 a 1 1 0 0 0 0 84 a 1 1 0 0 0 0 -84" stroke="#71BBFF" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-dashoffset="200" stroke-dasharray="300"></path></g></svg>
+                            </div>
+                            <div>
+                                <h4>请稍等...</h4>
+                            </div>
+                            `,
+                            showConfirmButton: false,
+                            allowOutsideClick: false
+                        });
+
+                        axios.post('/api/customer-health/', data).then((response, b, c) => {
+                            this.submiting = false;
+
+                            if (response.status === 200) {
+                                this.submited = true;
+                                Swal.fire(
+                                    '提交成功!',
+                                    '我们会尽快核实你的信息!',
+                                    'success'
+                                );
+                            } else {
+                                Swal.fire(
+                                    '错误!',
+                                    '发生错误,请联系管理员!',
+                                    'error'
+                                );
+                            }
+                        });
+                    }
 
 
                 }
