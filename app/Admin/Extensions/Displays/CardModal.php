@@ -30,7 +30,7 @@ EOT;
         $resultArray = [];
 
         foreach ($data as $item) {
-            $text   = $item['value'] == "1" ? "是" : "否";
+            $text   = $item["value"] == "1" ? "否" : "是";
             $string = <<<EOT
 <div class="card-item" style="padding-bottom: 15px;">
     <div class="card-label">Q .{$item['question']}</div>
