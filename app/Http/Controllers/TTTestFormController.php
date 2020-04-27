@@ -9,7 +9,7 @@ class TTTestFormController extends Controller
 {
     public function store(Request $request)
     {
-        $data = $request->only(['name', 'phone', 'question_data']);
+        $data = $request->only(['name', 'phone', 'channel', 'question_data']);
 
         $item = TT_TestForm::create($data);
 

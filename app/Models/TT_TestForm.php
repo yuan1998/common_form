@@ -9,6 +9,7 @@ class TT_TestForm extends Model
     protected $fillable = [
         "name",
         "phone",
+        "channel",
         "question_data",
     ];
 

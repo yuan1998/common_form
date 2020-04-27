@@ -17,6 +17,7 @@ class CreateTTTestFormsTable extends Migration
             $table->bigIncrements('id');
             $table->string('name');
             $table->string('phone');
+            $table->string('channel')->nullable();
             $table->json('question_data')->nullable();
             $table->timestamps();
         });

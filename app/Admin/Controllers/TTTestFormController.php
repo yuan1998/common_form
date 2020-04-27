@@ -49,6 +49,7 @@ class TTTestFormController extends AdminController
         $grid->column('id', __('Id'));
         $grid->column('name', __('Name'));
         $grid->column('phone', __('Phone'));
+        $grid->column('channel', __('Channel'));
         $grid->column('question_data', __('Question data'));
         $grid->column('created_at', __('Created at'));
         $grid->column('updated_at', __('Updated at'));
@@ -69,6 +70,7 @@ class TTTestFormController extends AdminController
         $show->field('id', __('Id'));
         $show->field('name', __('Name'));
         $show->field('phone', __('Phone'));
+        $show->field('channel', __('Channel'));
         $show->field('question_data', __('Question data'));
         $show->field('created_at', __('Created at'));
         $show->field('updated_at', __('Updated at'));
