@@ -23,3 +23,12 @@ function isJsonArray($string)
     }
     return false;
 }
+
+
+function makeUniqueFileName($prefix = "")
+{
+    $prefix   = $prefix ? "." . $prefix : "";
+    $filename = uniqid('ir', true) . $prefix;
+
+    return $filename;
+}

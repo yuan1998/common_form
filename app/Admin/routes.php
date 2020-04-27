@@ -14,4 +14,5 @@ Route::group([
     $router->get('/', 'HomeController@index')->name('admin.home');
 
     $router->resource('customer-healths', "CustomerHealthController");
+    $router->resource('tt_test-forms', "TTTestFormController");
 });

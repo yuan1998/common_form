@@ -14,7 +14,6 @@ class HomeController extends Controller
 {
     public function index(Content $content)
     {
-
         return $content
             ->title('仪表盘')
             ->description('数据预览')
@@ -22,7 +21,6 @@ class HomeController extends Controller
                 $row->column(4, function (Column $column) {
 
                     $today = Carbon::today();
-
                     $counter = CustomerHealth::query()
                         ->whereDate('created_at', $today)
                         ->count();

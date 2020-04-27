@@ -75,7 +75,6 @@
                                    v-model="baseForm.phone"
                                    class="questionInput" name="phone" placeholder="请输入手机号码">
                         </div>
-
                     </div>
                     <div class="questionItem">
                         <div class="questionTitle">
@@ -85,7 +84,6 @@
                             <input v-model="baseForm.body_temperature"
                                    type="tel" class="questionInput" name="body_temperature" placeholder="请输入现在的体温情况">
                         </div>
-
                     </div>
 
                     <div class="questionItem" v-for="(question,index) in questionList">

@@ -13,9 +13,19 @@ use Illuminate\Http\Request;
 |
 */
 
+Route::prefix('tt')->group(function () {
+    Route::prefix('test-form')->group(function () {
+        Route::post('/', "TTTestFormController@store");
+    });
+    
+});
+
+
+Route::prefix('base-image')->group(function () {
+    Route::post('/upload', "ImageController@uploadImage");
+});
 Route::prefix('customer-health')->group(function () {
     Route::post('/', "CustomerHealthController@store");
-
 });
 
 
