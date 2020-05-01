@@ -17,4 +17,10 @@ class TT_TestForm extends Model
         "question_data" => "json"
     ];
 
+
+    static public $channelList = [
+        'toutiao' => '头条',
+        'oppo'    => 'OPPO',
+    ];
+
 }

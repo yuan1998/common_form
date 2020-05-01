@@ -47,12 +47,11 @@ class TTTestFormController extends AdminController
 
 
         $grid->column('id', __('Id'));
-        $grid->column('name', __('Name'));
-        $grid->column('phone', __('Phone'));
-        $grid->column('channel', __('Channel'));
-        $grid->column('question_data', __('Question data'));
-        $grid->column('created_at', __('Created at'));
-        $grid->column('updated_at', __('Updated at'));
+        $grid->column('name', __('客户姓名'));
+        $grid->column('phone', __('客户电话'));
+        $grid->column('channel', __('线索渠道'));
+        $grid->column('question_data', __('客户问题'));
+        $grid->column('created_at', __('提交时间'));
 
         return $grid;
     }
