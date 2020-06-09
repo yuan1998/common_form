@@ -17,7 +17,7 @@ class XXlBaseFormController extends AdminController
      *
      * @var string
      */
-    protected $title = 'App\Models\XXlBaseForm';
+    protected $title = '信息流线索汇总';
 
     /**
      * Make a grid builder.

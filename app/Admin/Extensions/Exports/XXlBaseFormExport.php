@@ -20,6 +20,7 @@ class XXlBaseFormExport extends ExcelExporter implements WithMapping, ShouldAuto
         'name'          => '客户姓名',
         'phone'         => '客户电话',
         'channel'       => '渠道',
+        'url'           => '表单链接',
         'question_data' => '详细问题',
     ];
 
@@ -51,7 +52,7 @@ class XXlBaseFormExport extends ExcelExporter implements WithMapping, ShouldAuto
 
     public function map($form): array
     {
-        $channel = data_get(XXlBaseForm::$channelList, $form->channel ?? '未知','未知');
+        $channel = data_get(XXlBaseForm::$channelList, $form->channel ?? '未知', '未知');
         return [
             $form->id,
             $form->name,
