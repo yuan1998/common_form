@@ -3,14 +3,14 @@
 namespace App\Admin\Extensions\Exports;
 
 use App\Models\CustomerHealth;
-use App\Models\TT_TestForm;
+use App\Models\XXlBaseForm;
 use Encore\Admin\Grid\Exporters\ExcelExporter;
 use Maatwebsite\Excel\Concerns\ShouldAutoSize;
 use Maatwebsite\Excel\Concerns\WithMapping;
 use Maatwebsite\Excel\Concerns\WithStrictNullComparison;
 
 
-class TTTestFormExport extends ExcelExporter implements WithMapping, ShouldAutoSize, WithStrictNullComparison
+class XXlBaseFormExport extends ExcelExporter implements WithMapping, ShouldAutoSize, WithStrictNullComparison
 {
 
     protected $fileName = '客户健康报告.xlsx';
@@ -51,7 +51,7 @@ class TTTestFormExport extends ExcelExporter implements WithMapping, ShouldAutoS
 
     public function map($form): array
     {
-        $channel = data_get(TT_TestForm::$channelList, $form->channel ?? '未知','未知');
+        $channel = data_get(XXlBaseForm::$channelList, $form->channel ?? '未知','未知');
         return [
             $form->id,
             $form->name,

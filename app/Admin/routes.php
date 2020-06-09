@@ -6,13 +6,13 @@ use Illuminate\Routing\Router;
 Admin::routes();
 
 Route::group([
-    'prefix'        => config('admin.route.prefix'),
-    'namespace'     => config('admin.route.namespace'),
-    'middleware'    => config('admin.route.middleware'),
+    'prefix'     => config('admin.route.prefix'),
+    'namespace'  => config('admin.route.namespace'),
+    'middleware' => config('admin.route.middleware'),
 ], function (Router $router) {
 
     $router->get('/', 'HomeController@index')->name('admin.home');
 
     $router->resource('customer-healths', "CustomerHealthController");
-    $router->resource('tt_test-forms', "TTTestFormController");
+    $router->resource('tt_test-forms', XXlBaseFormController::class);
 });

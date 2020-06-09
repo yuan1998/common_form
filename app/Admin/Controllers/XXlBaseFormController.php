@@ -2,22 +2,22 @@
 
 namespace App\Admin\Controllers;
 
-use App\Admin\Extensions\Exports\TTTestFormExport;
-use App\Models\TT_TestForm;
+use App\Admin\Extensions\Exports\XXlBaseFormExport;
+use App\Models\XXlBaseForm;
 use Encore\Admin\Controllers\AdminController;
 use Encore\Admin\Facades\Admin;
 use Encore\Admin\Form;
 use Encore\Admin\Grid;
 use Encore\Admin\Show;
 
-class TTTestFormController extends AdminController
+class XXlBaseFormController extends AdminController
 {
     /**
      * Title for current resource.
      *
      * @var string
      */
-    protected $title = 'App\Models\TT_TestForm';
+    protected $title = 'App\Models\XXlBaseForm';
 
     /**
      * Make a grid builder.
@@ -26,8 +26,8 @@ class TTTestFormController extends AdminController
      */
     protected function grid()
     {
-        $grid = new Grid(new TT_TestForm);
-        $grid->exporter(new TTTestFormExport());
+        $grid = new Grid(new XXlBaseForm);
+        $grid->exporter(new XXlBaseFormExport());
 
         $grid->disableCreateButton();
         $grid->model()->orderBy('created_at', 'DESC');
@@ -64,7 +64,7 @@ class TTTestFormController extends AdminController
      */
     protected function detail($id)
     {
-        $show = new Show(TT_TestForm::findOrFail($id));
+        $show = new Show(XXlBaseForm::findOrFail($id));
 
         $show->field('id', __('Id'));
         $show->field('name', __('Name'));
@@ -77,6 +77,11 @@ class TTTestFormController extends AdminController
         return $show;
     }
 
+    public function destroy($id)
+    {
+        return $this->form()->destroy($id);
+    }
+
     /**
      * Make a form builder.
      *
@@ -84,7 +89,7 @@ class TTTestFormController extends AdminController
      */
     protected function form()
     {
-        $form = new Form(new TT_TestForm);
+        $form = new Form(new XXlBaseForm);
 
         $form->text('name', __('Name'));
         $form->mobile('phone', __('Phone'));

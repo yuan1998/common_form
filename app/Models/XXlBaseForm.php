@@ -4,13 +4,16 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
-class TT_TestForm extends Model
+class XXlBaseForm extends Model
 {
+    protected $table = 't_t__test_forms';
+
     protected $fillable = [
         "name",
         "phone",
         "channel",
         "question_data",
+        'url',
     ];
 
     protected $casts = [
