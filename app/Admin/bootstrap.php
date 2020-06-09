@@ -19,7 +19,11 @@
  */
 
 use App\Admin\Extensions\Displays\CardModal;
+use App\Admin\Filters\BetweenDate;
 use Encore\Admin\Grid\Column;
+use Encore\Admin\Grid\Filter;
+
+Filter::extend('betweenDate' , BetweenDate::class);
 
 Encore\Admin\Form::forget(['map', 'editor']);
 

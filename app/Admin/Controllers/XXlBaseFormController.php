@@ -39,7 +39,7 @@ class XXlBaseFormController extends AdminController
             $filter->disableIdFilter();
 
             $filter->column(1 / 2, function (Grid\Filter $filter) {
-                $filter->between('created_at', '时间')
+                $filter->betweenDate('created_at', '时间')
                     ->date();
             });
         });
