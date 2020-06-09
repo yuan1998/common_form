@@ -4,6 +4,7 @@ namespace App\Admin\Controllers;
 
 use App\Admin\Extensions\Exports\XXlBaseFormExport;
 use App\Models\XXlBaseForm;
+use Carbon\Carbon;
 use Encore\Admin\Controllers\AdminController;
 use Encore\Admin\Facades\Admin;
 use Encore\Admin\Form;
@@ -33,6 +34,17 @@ class XXlBaseFormController extends AdminController
         $grid->model()->orderBy('created_at', 'DESC');
 
 
+        $grid->filter(function ($filter) {
+            $filter->expand();
+            $filter->disableIdFilter();
+
+            $filter->column(1 / 2, function (Grid\Filter $filter) {
+                $filter->between('created_at', '时间')
+                    ->date();
+            });
+        });
+
+
         if (Admin::user()->isRole('administrator')) {
             $grid->actions(function ($actions) {
                 // 去掉编辑
@@ -45,8 +57,9 @@ class XXlBaseFormController extends AdminController
             $grid->disableActions();
         }
         $grid->disableRowSelector();
-        $grid->fixColumns(2);
+        $grid->fixColumns(3);
 
+        $grid->column('created_at', __('时间'));
         $grid->column('name', __('客户姓名'));
         $grid->column('phone', __('客户电话'));
         $grid->column('channel', __('线索渠道'))->display(function ($val) {
@@ -56,7 +69,6 @@ class XXlBaseFormController extends AdminController
             return $val ?? '无链接';
         });
         $grid->column('question_data', __('客户问题'));
-        $grid->column('created_at', __('提交时间'));
 
         return $grid;
     }
