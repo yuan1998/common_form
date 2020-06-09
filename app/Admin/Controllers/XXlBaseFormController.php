@@ -36,7 +36,7 @@ class XXlBaseFormController extends AdminController
         if (Admin::user()->isRole('administrator')) {
             $grid->actions(function ($actions) {
                 // 去掉编辑
-                $actions->disableEdit();
+//                $actions->disableEdit();
                 // 去掉查看
                 $actions->disableView();
             });
@@ -44,12 +44,17 @@ class XXlBaseFormController extends AdminController
         } else {
             $grid->disableActions();
         }
+        $grid->disableRowSelector();
+        $grid->fixColumns(2);
 
-
-        $grid->column('id', __('Id'));
         $grid->column('name', __('客户姓名'));
         $grid->column('phone', __('客户电话'));
-        $grid->column('channel', __('线索渠道'));
+        $grid->column('channel', __('线索渠道'))->display(function ($val) {
+            return $val ?? '无渠道';
+        });
+        $grid->column('url', __('表单链接'))->display(function ($val) {
+            return $val ?? '无链接';
+        });
         $grid->column('question_data', __('客户问题'));
         $grid->column('created_at', __('提交时间'));
 
@@ -93,7 +98,9 @@ class XXlBaseFormController extends AdminController
 
         $form->text('name', __('Name'));
         $form->mobile('phone', __('Phone'));
-        $form->text('question_data', __('Question data'));
+//        $form->text('question_data', __('Question data'));
+        $form->text('channel', '渠道');
+        $form->text('url', '表单链接');
 
         return $form;
     }
