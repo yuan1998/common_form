@@ -32,7 +32,7 @@ class XXlBaseFormController extends AdminController
 
         $grid->disableCreateButton();
         $grid->model()->orderBy('created_at', 'DESC');
-
+        disableAutocomplete();
 
         $grid->filter(function ($filter) {
             $filter->expand();

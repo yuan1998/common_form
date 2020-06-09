@@ -1,5 +1,7 @@
 <?php
 
+use Encore\Admin\Admin;
+
 function test_helper()
 {
     return 'OK';
@@ -31,4 +33,19 @@ function makeUniqueFileName($prefix = "")
     $filename = uniqid('ir', true) . $prefix;
 
     return $filename;
+}
+
+
+function disableAutocomplete()
+{
+    Admin::script(<<<EOT
+
+$(function() {
+    'use strict';
+    
+    $('input.form-control').attr('autocomplete','off');
+})
+
+EOT
+    );
 }
