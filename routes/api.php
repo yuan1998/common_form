@@ -19,6 +19,10 @@ Route::prefix('tt')->group(function () {
     });
 });
 
+Route::prefix('common-form')->group(function () {
+    Route::post('/', "BaseCommonFormController@store");
+});
+
 
 Route::prefix('base-image')->group(function () {
     Route::post('/upload', "ImageController@uploadImage");

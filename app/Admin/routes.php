@@ -15,4 +15,5 @@ Route::group([
 
     $router->resource('customer-healths', "CustomerHealthController");
     $router->resource('tt_test-forms', XXlBaseFormController::class);
+    $router->resource('base-common-forms', BaseCommonFormController::class);
 });
