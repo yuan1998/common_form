@@ -9,7 +9,7 @@ class BaseCommonFormController extends Controller
 {
     public function store(Request $request)
     {
-        $data = $request->only(['title', 'name', 'phone', 'other_data']);
+        $data = $request->only(['title', 'name', 'phone', 'other_data', 'url']);
 
         BaseCommonForm::create($data);
 

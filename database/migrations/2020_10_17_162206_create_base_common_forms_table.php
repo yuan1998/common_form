@@ -19,6 +19,7 @@ class CreateBaseCommonFormsTable extends Migration
             $table->string('name')->nullable();
             $table->string('phone')->nullable();
             $table->json('other_data')->nullable();
+            $table->text('url')->nullable();
             $table->timestamps();
         });
     }

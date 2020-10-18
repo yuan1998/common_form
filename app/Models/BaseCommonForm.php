@@ -11,6 +11,7 @@ class BaseCommonForm extends Model
         'name',
         'phone',
         'other_data',
+        'url',
     ];
 
     protected $casts = [
