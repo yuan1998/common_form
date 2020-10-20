@@ -22,6 +22,9 @@ Route::prefix('tt')->group(function () {
 Route::prefix('common-form')->group(function () {
     Route::post('/', "BaseCommonFormController@store");
 });
+Route::prefix('wechat-jssdk')->group(function () {
+    Route::get('jssdkConfigBuilder', "WechatAuthController@jssdkConfigBuilder");
+});
 
 
 Route::prefix('base-image')->group(function () {
