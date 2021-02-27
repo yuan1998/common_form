@@ -1,4 +1,12 @@
 {
+  "Updated at": "修改时间",
+  "Created at": "创建时间",
+  "Other question": "其他问题",
+  "Images": "图片",
+  "Comment": "留言",
+  "Gender": "性别",
+  "Id": "编号",
+  "Phone": "电话",
   "A fresh verification link has been sent to your email address.": "新的验证链接已发送到您的 E-mail。",
   "All rights reserved.": "版本所有。",
   "Before proceeding, please check your email for a verification link.": "在继续之前请先验证您的 E-mail。",

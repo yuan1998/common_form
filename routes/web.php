@@ -18,3 +18,5 @@ Route::get('/', function () {
 Route::get('/customer-health', function () {
     return view('formPage.customerHealth');
 });
+Route::get('storage/{any}', "ImageController@index")->where('any', '.*?');;
+

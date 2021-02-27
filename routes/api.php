@@ -26,10 +26,14 @@ Route::prefix('wechat-jssdk')->group(function () {
     Route::get('jssdkConfigBuilder', "WechatAuthController@jssdkConfigBuilder");
 });
 
-
 Route::prefix('base-image')->group(function () {
     Route::post('/upload', "ImageController@uploadImage");
 });
 Route::prefix('customer-health')->group(function () {
     Route::post('/', "CustomerHealthController@store");
 });
+
+Route::prefix('questionnaire')->group(function () {
+    Route::post('/', "QuestionnaireController@store");
+});
+
