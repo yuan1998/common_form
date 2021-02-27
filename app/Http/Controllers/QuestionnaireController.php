@@ -17,6 +17,7 @@ class QuestionnaireController extends Controller
             'comment',
             'images',
             'other_question',
+            'hospital',
         ]);
         $result = Questionnaire::create($data);
         return response()->json([

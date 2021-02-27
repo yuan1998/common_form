@@ -3,6 +3,7 @@
 namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
+use Illuminate\Validation\Rule;
 
 class QuestionStoreRequest extends FormRequest
 {
@@ -24,7 +25,18 @@ class QuestionStoreRequest extends FormRequest
     public function rules()
     {
         return [
-            'phone' => 'required|unique:questionnaires'
+            'phone' =>
+                [
+                    'required',
+                    Rule::unique('questionnaires')->where(function ($query) {
+                        $phone    = $this->request->get('phone');
+                        $hospital = $this->request->get('hospital', 'xahm');
+
+                        return $query->where('phone', $phone)
+                            ->where('hospital', $hospital);
+                    }),
+                ],
+
         ];
     }
 }

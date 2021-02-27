@@ -25,9 +25,17 @@ class QuestionnaireController extends AdminController
      */
     protected function grid()
     {
-        $grid = new Grid(new Questionnaire);
+        $grid     = new Grid(new Questionnaire);
+        $hospital = request()->get('hospital');
+        if ($hospital) {
+            $grid->model()->where('hospital', $hospital);
+        }
+        $grid->model()->orderBy('id', 'desc');
+        $grid->disableCreateButton();
+        $grid->disableActions();
 
         $grid->column('id', __('Id'));
+        $grid->column('hospital', __('hospital'))->hide();
         $grid->column('name', __('Name'));
         $grid->column('phone', __('Phone'));
         $grid->column('gender', __('Gender'));
@@ -39,9 +47,15 @@ class QuestionnaireController extends AdminController
                 return collect($val)->filter()->map(function ($path) {
                     return "<img src='$path?size=small' style='max-width:100px;max-height:100px' class='img img-thumbnail' />";
                 })->implode('&nbsp;');
-
             });
-        $grid->column('other_question', __('Other question'));
+        $grid->column('other_question', __('Other question'))
+            ->display(function ($val) {
+                if (!$val) return '-';
+
+                return collect($val)->filter()->map(function ($value, $key) {
+                    return "$key  &nbsp;&nbsp;: &nbsp;&nbsp; $value";
+                })->implode('<br/>');
+            });
         $grid->column('created_at', __('Created at'));
         $grid->column('updated_at', __('Updated at'));
 

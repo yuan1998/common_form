@@ -13,6 +13,7 @@ class Questionnaire extends Model
         'comment',
         'images',
         'other_question',
+        'hospital',
     ];
 
     protected $casts = [
