@@ -4,6 +4,7 @@ namespace App\Admin\Controllers;
 
 use App\Models\Questionnaire;
 use Encore\Admin\Controllers\AdminController;
+use Encore\Admin\Facades\Admin;
 use Encore\Admin\Form;
 use Encore\Admin\Grid;
 use Encore\Admin\Show;
@@ -32,7 +33,9 @@ class QuestionnaireController extends AdminController
         }
         $grid->model()->orderBy('id', 'desc');
         $grid->disableCreateButton();
-        $grid->disableActions();
+        if (!Admin::user()->isRole('administrator')) {
+            $grid->disableActions();
+        }
 
         $grid->column('id', __('Id'));
         $grid->column('hospital', __('hospital'))->hide();
