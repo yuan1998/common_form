@@ -17,4 +17,5 @@ Route::group([
     $router->resource('tt_test-forms', XXlBaseFormController::class);
     $router->resource('base-common-forms', BaseCommonFormController::class);
     $router->resource('questionnaires', QuestionnaireController::class);
+    $router->resource('user-groups', UserGroupController::class);
 });

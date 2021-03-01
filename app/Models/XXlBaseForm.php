@@ -2,6 +2,7 @@
 
 namespace App\Models;
 
+use Encore\Admin\Auth\Database\Administrator;
 use Illuminate\Database\Eloquent\Model;
 
 class XXlBaseForm extends Model
@@ -25,5 +26,11 @@ class XXlBaseForm extends Model
         'toutiao' => '头条',
         'oppo'    => 'OPPO',
     ];
+
+    public function user()
+    {
+        return $this->belongsToMany(Administrator::class, 'admin_user_has_test_form', 'form_id', 'user_id');
+    }
+
 
 }

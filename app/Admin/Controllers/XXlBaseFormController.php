@@ -2,7 +2,9 @@
 
 namespace App\Admin\Controllers;
 
+use App\Admin\Actions\BaseForm\BatchDispatch;
 use App\Admin\Extensions\Exports\XXlBaseFormExport;
+use App\Models\Administrator;
 use App\Models\XXlBaseForm;
 use Carbon\Carbon;
 use Encore\Admin\Controllers\AdminController;
@@ -31,7 +33,7 @@ class XXlBaseFormController extends AdminController
         $grid->exporter(new XXlBaseFormExport());
 
         $grid->disableCreateButton();
-        $grid->model()->orderBy('created_at', 'DESC');
+        $grid->model()->with(['user'])->orderBy('created_at', 'DESC');
         disableAutocomplete();
 
         $grid->filter(function ($filter) {
@@ -56,10 +58,15 @@ class XXlBaseFormController extends AdminController
         } else {
             $grid->disableActions();
         }
-        $grid->disableRowSelector();
         $grid->fixColumns(3);
+        $grid->batchActions(function ($batch) {
+            $batch->add(new BatchDispatch());
+        });
 
         $grid->column('created_at', __('时间'));
+        $grid->column('user.username', __('分配'))->display(function () {
+            return $this->user->first()['username'] ?? '-未分配-';
+        });
         $grid->column('name', __('客户姓名'));
         $grid->column('phone', __('客户电话'));
         $grid->column('channel', __('线索渠道'))->display(function ($val) {
